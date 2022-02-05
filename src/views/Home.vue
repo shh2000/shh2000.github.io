@@ -37,7 +37,7 @@
       </div>
     </div>
     <div class="main">
-      <div class="toolkit">
+      <!--<div class="toolkit">
         <div class="news-header">
           <span class="block-title">Project Introduction</span>
         </div>
@@ -48,7 +48,7 @@
             height="350"
           />
         </div>
-      </div>
+      </div>-->
       <div class="toolkitbig">
         <div class="news-header">
           <span class="block-title">Research Content</span>
@@ -61,7 +61,7 @@
           />
         </div>
       </div>
-      <div class="toolkitbig">
+      <!--<div class="toolkitbig">
         <div class="news-header">
           <span class="block-title">Research Roadmap</span>
         </div>
@@ -72,7 +72,7 @@
             height="500"
           />
         </div>
-      </div>
+      </div>-->
       <div class="toolkitsmall">
         <div class="news-header">
           <span class="block-title">Supporting Institutions</span>
@@ -315,7 +315,7 @@ export default {
   padding-bottom: 20px;
 }
 .toolkitsmall {
-  height: 400px;
+  height: 350px;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;
