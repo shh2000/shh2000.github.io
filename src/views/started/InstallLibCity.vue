@@ -2,10 +2,10 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px;color: white;">
-        <p style="margin: 20px 0 30px 130px; font-size: 60px">Install LibCity</p>
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">BRICS EpiModeling Project</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
           <!-- LibCity can be installed with pip, with Conda or from source. -->
-          LibCity can be installed from source.
+          This project research the datas, factors, models and applications of COVID-19 modeling. 
         </p>
       </div>
     </div>
@@ -46,42 +46,46 @@
             </div>
             <br> -->
             
-            <p class="title">Source</p>
+            <p class="title">Research Topics</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
             <!-- <p>Download the source files from GitHub:</p> -->
-            <p>LibCity can only be installed from source code.</p>
-            <p>Please execute the following command to get the source code.</p>
+            <p>This project sets up three topics, which are undertaken by research teams in China, Russia and Brazil respectively. The subject setting is carried out in accordance with the principles of vertical division and horizontal cooperation, that is, each subject covers all levels from data collection to model application to ensure the integrity and independence of the research work of all parties, thereby controlling research risks; At the level, the research content of each team has different focuses, complementing each other's advantages and avoiding repeated research.</p>
             <div class="code">
                 <code data-lang="bash">
                     git clone https://github.com/LibCity/Bigscity-LibCity.git<br>
                     cd Bigscity-LibCity
                 </code>
             </div>
-            <p>After obtaining the source code, you can configure the environment.</p>
             <br>
 
-            <p class="title">Requirements</p>
+            <p class="title">Research Content and Cooperations</p>
             <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-            <p>Our code is based on Python version 3.7 and Pytorch version 1.7.1. You can click <a href="https://pytorch.org/get-started/previous-versions/#v171" target="_blank">here</a> to see how to install Pytorch. For example, if your cuda vision is 10.2, you can install Pytorch with the following command.</p>
-            <p>Pip:</p>
+            <p>This project aims to develop a set of multi-level, multi-angle and multi-method simulation and prediction models for the new crown pneumonia epidemic through the multilateral scientific research cooperation of China, Russia and Brazil, using their respective advantageous fields. The research content of this project includes four parts: data collection, extraction of influencing factors, model establishment, and model application of the new crown pneumonia epidemic modeling, covering the entire process of the new crown epidemic model from data input to practical application.</p>
+            <p>In Data Level:</p>
             <div class="code">
                 <code data-lang="bash">
                     pip install torch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2
                 </code>
             </div>
-            <p>Conda:</p>
+            <p>In Factor Level:</p>
             <div class="code">
                 <code data-lang="bash">
                     conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2 cudatoolkit=10.2 -c pytorch
                 </code>
             </div>
-            <p>After installing Pytorch, you can install all the dependencies of LibCity with the following command by pip.</p>
+            <p>In Model Level:</p>
             <div class="code">
                 <code data-lang="bash">
                     pip install -r requirements.txt
                 </code>
             </div>
-            <p>Now, you can use LibCity, more details please refer to the section <a href="https://libcity.ai/#/quick_start">Quick Start</a>.</p>
+            <p>In Application Level:</p>
+            <div class="code">
+                <code data-lang="bash">
+                    pip install -r requirements.txt
+                </code>
+            </div>
+            <p>In addition, the teams from the three countries will also conduct research on the application of the model in the application scenarios of their own cities according to their unique epidemic development trends.</p>
             <br>
         </div>
     </div>

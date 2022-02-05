@@ -2,17 +2,17 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px;color: white;">
-        <p style="margin: 20px 0 30px 130px; font-size: 60px">Ranking</p>
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">Team</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibCity tests existing models on different datasets <br>
-          and shows performances and rankings of these models for each dataset.
+          Our team has professors and students from top insitutes in <br>
+          China, Russia and Brazil. 
         </p>
       </div>
     </div>
 
     <div class="content">
       <div class="task-ranking">
-        <p class="task-name">Traffic State Prediction</p>
+        <p class="task-name">Institites and Team Members</p>
         <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
         <rank-table :rankdata="speed"></rank-table>
         <br>
@@ -33,86 +33,51 @@ import rankTable from "./ranking/rankingTable"
 
 const speed = [
   {
-    dataset: 'METR-LA',
-    best: 'MTGNN',
-    paper: '[KDD2020]Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#metr-la',
+    dataset: 'China',
+    best: 'Chinese Center for Disease Control and Prevention',
+    paper: 'The core department of China\'s disease prevention and control and public health technology management and services.',
+    datasetlink: 'https://www.chinacdc.cn/',
     mlink: '#',
-    plink: 'https://arxiv.org/abs/2005.11650',
+    plink: 'https://www.chinacdc.cn/',
     dlink: 'METR-LA'
   },
   {
-    dataset: 'PEMS-BAY',
-    best: 'GWNET',
-    paper: '[IJCAI2019]Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pems-bay',
+    dataset: 'China',
+    best: 'Beihang University',
+    paper: 'The epidemic prediction support team of the Joint Prevention and Control Mechanism of the State Council has accumulated rich experience in modeling the COVID-19 epidemic based on big data and artificial intelligence.',
+    datasetlink: 'https://buaa.edu.cn/',
     mlink: '#',
-    plink: 'https://arxiv.org/abs/1906.00121',
+    plink: 'https://buaa.edu.cn/',
     dlink: 'PEMS-BAY'
   },
   {
-    dataset: 'PEMSD4',
-    best: 'GWNET',
-    paper: '[IJCAI2019]Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd4',
+    dataset: 'Russia',
+    best: 'National Medical Research Center of Phthisiopulmonology and Infectious Diseases',
+    paper: 'The core department of Russia\'s respiratory and infectious disease research, the Russian new coronary pneumonia vaccine research and development unit.',
+    datasetlink: 'https://cyberleninka.ru/',
     mlink: '#',
-    plink: 'https://arxiv.org/abs/1906.00121',
+    plink: 'https://cyberleninka.ru/',
     dlink: 'PEMSD4'
   },
   {
-    dataset: 'PEMSD8',
-    best: 'GWNET',
-    paper: '[IJCAI2019]Graph Wavenet for Deep Spatial-Temporal Graph Modeling',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#pemsd8',
+    dataset: 'Russia',
+    best: 'Zababakhin Russian Research Institute for Technical Physics',
+    paper: 'Russia\'s highest-level research institution in technical physics and applied physics has accumulated a lot in the micro-mathematical modeling of the new crown epidemic.',
+    datasetlink: 'http://vniitf.ru/',
     mlink: '#',
-    plink: 'https://arxiv.org/abs/1906.00121',
+    plink: 'http://vniitf.ru/',
     dlink: 'PEMSD8'
   },
   {
-    dataset: 'T-Drive20150206',
-    best: 'MTGNN',
-    paper: '[KDD2020]Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#t-drive20150206',
+    dataset: 'Brazil',
+    best: 'Oswaldo Cruz Foundation (Fiocruz)',
+    paper: 'Brazil\'s national public health agency, the research and development department of Brazil\'s national infectious disease early warning system, and the consulting department for the formulation of new crown epidemic prevention and control policies.',
+    datasetlink: 'https://portal.fiocruz.br/en',
     mlink: '#',
-    plink: 'https://arxiv.org/abs/2005.11650',
+    plink: 'https://portal.fiocruz.br/en',
     dlink: 'T-Drive20150206'
   },
-  {
-    dataset: 'TAXIBJ2015',
-    best: 'AGCRN',
-    paper: '[NeurIPS2020]Adaptive Graph Convolutional Recurrent Network for Traffic Forecasting',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
-    mlink: '#',
-    plink: 'https://arxiv.org/abs/2007.02842',
-    dlink: 'TAXIBJ2015'
-  },
-  {
-    dataset: 'NYCTAXI202001-202003-3600',
-    best: 'DCRNN',
-    paper: '[ICLR2018]Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting',
-    datasetlink: '#',
-    mlink: '#',
-    plink: 'https://arxiv.org/abs/1707.01926',
-    dlink: 'NYCTAXI202001-202003-3600'
-  },
-  // {
-  //     dataset: 'TAXIBJ',
-  //     best: 'MTGNN',
-  //     paper: 'Spatio-Temporal Graph Structure Learning for Traffic Forecasting',
-  //     datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#taxibj',
-  //     mlink: '#',
-  //     plink: 'https://arxiv.org/abs/2005.11650',
-  //     dlink: 'TAXIBJ'
-  // },
-  {
-    dataset: 'NYCBike20140409',
-    best: 'MTGNN',
-    paper: '[KDD2020]Connecting the Dots: Multivariate Time Series Forecasting with Graph Neural Networks',
-    datasetlink: 'https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/raw_data.html#nycbike20140409',
-    mlink: '#',
-    plink: 'https://arxiv.org/abs/2005.11650',
-    dlink: 'NYCBike20140409'
-  },
+  
 ]
 
 const location = [

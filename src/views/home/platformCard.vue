@@ -29,23 +29,23 @@
       <a-col :span="8">
         <div class="pcard">
             <a-card title="PaperList" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibCity offers more than 300 research papers on spatio-temporal data mining from top conferences or journals.</p>
-                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link"><a href="https://github.com/LibCity/Bigscity-LibCity-Paper" target="_blank">See More >></a></a-button>
+                <p style="margin-bottom: 0px; height: 120px">We offers more than 300 research papers on COVID-19 Modeling from top conferences or journals.</p>
+                <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link"><a href="https://github.com/Bigscity-epidemic/Bigscity-epidemic-survey-paperlist" target="_blank">See More >></a></a-button>
             </a-card>
         </div>
       </a-col>
       <a-col :span="8">
         <div class="pcard">
-            <a-card title="Ranking" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">LibCity tests existing models on different datasets and shows performances and rankings of these models for each dataset.</p>
+            <a-card title="Team Profile" :bordered="true" style="border-radius: 5px">
+                <p style="margin-bottom: 0px; height: 120px">Our team has professors and students from top insitutes in China, Russia and Brazil.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toRanking">See More >></a-button>
             </a-card>
         </div>
       </a-col>
       <a-col :span="8">
         <div class="pcard">
-            <a-card title="Tutorial" :bordered="true" style="border-radius: 5px">
-                <p style="margin-bottom: 0px; height: 120px">This website provides a demonstration video for researchers to know the basic usage of LibCity quickly.</p>
+            <a-card title="Achievements" :bordered="true" style="border-radius: 5px">
+                <p style="margin-bottom: 0px; height: 120px">This website displays the achievements we have already dealt.</p>
                 <a-button style="padding-left: 180px; margin-top: 5px; font-size: 15px;" type="link" @click="toTutorial">See More >></a-button>
             </a-card>
         </div>
@@ -83,7 +83,7 @@ export default {
     },
     toTutorial() {
         this.$router.push({
-            name: "Tutorial",
+            name: "Evaluation",
         });
     }
   }

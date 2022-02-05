@@ -2,10 +2,10 @@
   <table>
     <thead>
       <tr>
-        <th>DATASET</th>
-        <th>BEST METHOD</th>
-        <th>PAPER</th>
-        <th>COMAPRE</th>
+        <th>Country</th>
+        <th>Institute</th>
+        <th>Introduction</th>
+        <th>See Members</th>
       </tr>
     </thead>
     <tbody>
@@ -19,10 +19,7 @@
             target="_blank"
           >{{item.dataset}}</a></td>
         <td width="15%">
-          <a-icon
-            type="crown"
-            style="color: gold; font-size: 20px;"
-          />{{item.best}}
+          {{item.best}}
         </td>
         <td width="55%"><a
             class="paper"

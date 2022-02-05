@@ -2,85 +2,86 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px; color: white;">
-        <p style="width:200px;margin: 30px 0 20px 150px; font-size: 64px">LibCity</p>
-        <p style="width:1000px;margin: 0px 0 20px 150px; font-size: 32px">
-          A unified, comprehensive and extensible library for traffic prediction.
+        <p style="width:800px;margin: 30px 0 20px 150px; font-size: 64px">EpiModeling Project</p>
+        <p style="width:1500px;margin: 0px 0 20px 150px; font-size: 32px">
+          Under BRICS-STI Framework, using modeling techniques to research COVID-19.
         </p>
         <div class="btn-list">
-          <a-button
-            class="btn"
-            type="primary"
-            shape="round"
-            @click="toInstallToolkit()"
-          >Install</a-button>
           <a-button
             class="btn"
             id="long_btn"
             type="primary"
             shape="round"
-            @click="toQuickStart()"
-          >Quick Start</a-button>
+            @click="toInstallToolkit()"
+          >Introduction</a-button>
+          <a-button
+            class="btn"            
+            type="primary"
+            shape="round"
+            @click="toRanking()"
+          >Teams</a-button>
           <a-button
             class="btn"
             type="primary"
             shape="round"
             @click="toPaper()"
-          >Paper</a-button>
+          >Papers</a-button>
           <a-button
             class="btn"
-            id="btn"
+            id="long_btn"
             type="primary"
             shape="round"
             @click="toTutorial()"
-          >Tutorial</a-button>
+          >Achievement</a-button>
         </div>
       </div>
     </div>
     <div class="main">
-      <div style="min-height: 340px">
-        <feat-card class="feature"></feat-card>
-      </div>
-      <div class="video">
-        <div class="video-header">
-          <span class="block-title">VIDEO</span>
-        </div>
-        <a-button-group class="lang-btn-group">
-          <a-button id="english-btn" class="lang-btn" type="primary" disabled @click="changeVideoLang()">
-            English Version
-          </a-button>
-          <a-button id="chinese-btn" class="lang-btn" type="primary" @click="changeVideoLang()">
-            Chinese Version
-          </a-button>
-        </a-button-group>
-        <video-player class="video-player vjs-custom-skin" ref="videoPlayer" :playsline="false" :options="playerOptions"></video-player>
-        <div class="video-notes">* These statistics are updated to November 2021.</div>
-      </div>
-      <!-- <div class="latestnews">
-        <div class="news-header"><span class="news-block-title">LATEST NEWS</span>
-          <a-button
-            class="seemore-btn"
-            value="large"
-            style="background-color: white;"
-            @click="toNews"
-          >
-            See all News
-            <a-icon
-              type="right"
-              style="color: red;"
-            />
-          </a-button>
-        </div>
-        <new-card class="news"></new-card>
-      </div> -->
       <div class="toolkit">
         <div class="news-header">
-          <span class="block-title">FRAMEWORK</span>
+          <span class="block-title">Project Introduction</span>
         </div>
         <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
           <img
-            src="../assets/img/toolkit.png"
+            src="../assets/img/overall.png"
             alt="toolkit"
-            height="550"
+            height="350"
+          />
+        </div>
+      </div>
+      <div class="toolkitbig">
+        <div class="news-header">
+          <span class="block-title">Research Content</span>
+        </div>
+        <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
+          <img
+            src="../assets/img/content.png"
+            alt="toolkit"
+            height="500"
+          />
+        </div>
+      </div>
+      <div class="toolkitbig">
+        <div class="news-header">
+          <span class="block-title">Research Roadmap</span>
+        </div>
+        <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
+          <img
+            src="../assets/img/method.png"
+            alt="toolkit"
+            height="500"
+          />
+        </div>
+      </div>
+      <div class="toolkitsmall">
+        <div class="news-header">
+          <span class="block-title">Supporting Institutions</span>
+        </div>
+        <div style="width: 80%; margin: 10px auto 20px auto; text-align: center">
+          <img
+            src="../assets/img/ins.png"
+            alt="toolkit"
+            height="200"
           />
         </div>
       </div>
@@ -178,7 +179,7 @@ export default {
     },
     toTutorial() {
       this.$router.push({
-        name: "Tutorial",
+        name: "Evaluation",
       });
     },
     toNews() {
@@ -191,10 +192,10 @@ export default {
         name: "InstallLibCity",
       });
     },
-    toQuickStart() {
-      this.$router.push({
-        name: "QuickStart",
-      });
+    toRanking() {
+        this.$router.push({
+            name: "Ranking",
+        });
     },
     toPaperList() {
       this.$router.push({
@@ -302,7 +303,19 @@ export default {
   margin: 20px auto 20px auto;
 }
 .toolkit {
+  height: 500px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.toolkitbig {
   height: 660px;
+  background-color: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.toolkitsmall {
+  height: 400px;
   background-color: white;
   padding-top: 20px;
   padding-bottom: 20px;

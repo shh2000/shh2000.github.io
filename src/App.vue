@@ -26,138 +26,63 @@
         <a-menu-item
           key="2"
           style="width: 135px; font-size: 20px; textalign: center"
+          @click="menuItemClick('InstallLibCity')"
         >
-          <a-dropdown>
-            <span class="ant-dropdown-link">
-              Get Started
-              <a-icon type="down" />
-            </span>
-            <a-menu slot="overlay" style="width: 130px">
-              <a-menu-item
-                @click="menuItemClick('InstallLibCity')"
-                style="font-size: 16px; line-height: 24px"
-              >
-                <a href="javascript:;">Install LibCity</a>
-              </a-menu-item>
-              <a-menu-item
-                @click="menuItemClick('QuickStart')"
-                style="font-size: 16px; line-height: 24px"
-              >
-                <a href="javascript:;">Quick Start</a>
-              </a-menu-item>
-            </a-menu>
-          </a-dropdown>
+          Project
         </a-menu-item>
+        
 
         <a-menu-item
           key="3"
-          style="width: 55px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Task')"
+          style="width: 135px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Ranking')"
         >
-          Task
+          Team
         </a-menu-item>
 
         <a-menu-item
           key="4"
-          style="width: 80px; font-size: 20px; textalign: center"
+          style="width: 135px; font-size: 20px; textalign: center"
+          @click="menuItemClick('Paper')"
+        >
+          Papers
+        </a-menu-item>
+        <a-menu-item
+          key="5"
+          style="width: 190px; font-size: 20px; textalign: center"
         >
           <a-dropdown>
             <span class="ant-dropdown-link">
-              Toolkit
+              Achievements
               <a-icon type="down" />
             </span>
-            <a-menu slot="overlay" style="width: 100px">
+            <a-menu slot="overlay" style="width: 190px">
+              <a-menu-item
+                @click="menuItemClick('Evaluation')"
+                style="font-size: 16px; line-height: 24px"
+              >
+                <a href="javascript:;">Chinese Achievements</a>
+              </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('Data')"
                 style="font-size: 16px; line-height: 24px"
               >
-                <a href="javascript:;">Data</a>
+                <a href="javascript:;">Russian Achievements</a>
               </a-menu-item>
               <a-menu-item
                 @click="menuItemClick('Model')"
                 style="font-size: 16px; line-height: 24px"
               >
-                <a href="javascript:;">Model</a>
-              </a-menu-item>
-              <a-menu-item
-                @click="menuItemClick('Evaluation')"
-                style="font-size: 16px; line-height: 24px"
-              >
-                <a href="javascript:;">Evaluation</a>
+                <a href="javascript:;">Brazilian Achievements</a>
               </a-menu-item>
             </a-menu>
           </a-dropdown>
         </a-menu-item>
-
         <a-menu-item
-          key="5"
-          style="
-            width: 110px;
-            font-size: 20px;
-            textalign: center;
-            margin-left: 10px;
-          "
-        >
-          <a
-            href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
-            target="_blank"
-            >Document</a
-          >
-        </a-menu-item>
-
-        <!-- <a-menu-item
           key="6"
-          style="width: 70px; font-size: 20px; textalign: center"
-          @click="menuItemClick('PaperList')"
-        >
-          PaperList
-        </a-menu-item> -->
-
-        <a-menu-item
-          key="7"
-          style="width: 90px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Ranking')"
-        >
-          Ranking
-        </a-menu-item>
-
-        <a-menu-item
-          key="8"
-          style="width: 85px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Tutorial')"
-        >
-          Tutorial
-        </a-menu-item>
-
-        <a-menu-item
-          key="11"
-          style="width: 65px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Paper')"
-        >
-          Paper
-        </a-menu-item>
-
-        <a-menu-item
-          key="9"
-          style="width: 70px; font-size: 20px; textalign: center"
-          @click="menuItemClick('About')"
-        >
-          About
-        </a-menu-item>
-
-        <!-- <a-menu-item
-          key="8"
-          style="width: 80px; font-size: 20px; textalign: center"
-          @click="menuItemClick('Chart')"
-        >
-          Visual
-        </a-menu-item> -->
-
-        <a-menu-item
-          key="10"
-          style="width: 95px; font-size: 20px; textalign: center"
-        >
-          <a href="https://github.com/LibCity" target="_blank">GitHub</a>
+          style="width: 135px; font-size: 20px; textalign: center"
+        ><a href="http://brics-sti.org/" target="_blank">About</a>
+          
         </a-menu-item>
 
         <!-- <a-menu-item
@@ -368,8 +293,8 @@
           <dl>
             <dt>
               <a-button class="footer-btn" type="link"
-                ><a style="font-size: 16px" href="https://www.bigcity.ai/"
-                  >BIGSCity</a
+                ><a style="font-size: 16px" href="http://covid19-report.com/"
+                  >Epidemic Predicting Visualmap</a
                 ></a-button
               >
             </dt>
@@ -390,19 +315,9 @@
               <a-button class="footer-btn" type="link"
                 ><a
                   style="font-size: 16px"
-                  href="https://bigscity-libcity-docs.readthedocs.io/en/latest/"
+                  href="https://github.com/Bigscity-epidemic/Bigscity-epidemic-survey"
                   target="_blank"
-                  >Document</a
-                ></a-button
-              >
-            </dt>
-            <dt>
-              <a-button class="footer-btn" type="link"
-                ><a
-                  style="font-size: 16px"
-                  href="https://github.com/LibCity"
-                  target="_blank"
-                  >GitHub</a
+                  >LibEpidemic</a
                 ></a-button
               >
             </dt>
@@ -411,7 +326,7 @@
                 class="footer-btn"
                 type="link"
                 style="font-size: 16px"
-                href="https://github.com/LibCity/Bigscity-LibCity-PaperList"
+                href="https://github.com/Bigscity-epidemic/Bigscity-epidemic-survey-paperlist"
                 target="_blank"
                 >Paper Library</a-button
               >
@@ -421,8 +336,8 @@
                 class="footer-btn"
                 type="link"
                 style="font-size: 16px"
-                @click="toAbout"
-                >About Us</a-button
+                
+                ><a href="http://brics-sti.org/" target="_blank">About</a></a-button
               >
             </dt>
           </dl>
@@ -435,7 +350,7 @@
             margin-top: 20px;
           "
         >
-          Copyright © 2021 LibCity All rights served.
+          Copyright © 2022 BIGSCity All rights served.
         </div>
       </div>
     </a-layout-footer>

@@ -11,20 +11,6 @@
             <li><a href="https://www.bilibili.com/video/BV1cS4y1d7hf" target="_blank">LibCity Presentation(P1)</a> and <a href="https://www.bilibili.com/video/BV1ab4y187Dr" target="_blank">LibCity Tutorial(P2)</a> has been uploaded to bilibili (in Chinese).</li>
             <br>
         </div>
-        <iframe src="https://player.bilibili.com/player.html?aid=721510946" id="iframe1" class="iframe" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
-        <!-- <div style="width:100%;height:0;padding:0;padding-bottom:calc(9/16*100%)">
-          <iframe src="https://player.bilibili.com/player.html?aid=721510946" class="iframe" width="100%" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
-        </div> -->
-        <p></p>
-        <iframe src="https://player.bilibili.com/player.html?aid=634029725" id="iframe2" class="iframe" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" sandbox="allow-forms allow-scripts allow-same-origin allow-popups"></iframe>
-        <div>
-            <br>
-            <p> Below is the demonstration video of LibCity. </p>
-            <p> From this demo, you can see the whole pipeline from cloning code, environment configuration, downloading data, running model, completing training and model evaluation.</p>
-        </div>
-        <video-player class="video-player vjs-custom-skin" ref="videoPlayer" :playsline="false" :options="playerOptions"></video-player>
-        <br>
-        <br>
     </div>
 </template>
 
