@@ -294,7 +294,7 @@
             <dt>
               <a-button class="footer-btn" type="link"
                 ><a style="font-size: 16px" href="http://covid19-report.com/"
-                  >Epidemic Predicting Visualmap</a
+                  >Epidemic Predicting Platform</a
                 ></a-button
               >
             </dt>

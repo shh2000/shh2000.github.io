@@ -14,52 +14,14 @@
             <div>
                 <p class="title">Open-sourced EpiModeling Toolkit</p>
                 <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-
-                <p>Considering the different output formats of models for different tasks, the framework implements different evaluators for different tasks and supports a variety of mainstream evaluation methods. The evaluation methods supported by different tasks are given below.</p>
-
-                <table style="width: 900px">
-                    <thead style="font-size: 16px">
-                        <tr>
-                            <th width="50%">Task</th>
-                            <th width="50%">Supported Metrics</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Traffic Flow Prediction</td>
-                            <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
-                        </tr>
-                        <tr>
-                            <td>Traffic Speed Prediction</td>
-                            <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
-                        </tr>
-                        <tr>
-                            <td>On-Demand Service Predition</td>
-                            <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
-                        </tr>
-                        <tr>
-                            <td>Trajectory Next-Location Prediction</td>
-                            <td>TopK</td>
-                        </tr>
-                        <tr>
-                            <td>Map Matching</td>
-                            <td>RMF、AN、AL</td>
-                        </tr>
-                        <tr>
-                            <td>Estimated Time of Arrival</td>
-                            <td>MAE、MSE、RMSE、MAPE、R2、EVAR</td>
-                        </tr>
-                    </tbody>
-                </table>
-                <br>
-
-                <ul>
-                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/traffic_state_pred.html" target="_blank">Traffic State Prediction Evaluator</a></li>
-                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/traj_loc_pred.html" target="_blank">Trajectory Next-Location Prediction Evaluator</a></li>
-                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/map_matching.html" target="_blank">Map Matching Evaluator</a></li>
-                    <li><a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/evaluator/eta.html" target="_blank">Estimated Time of Arrival Evaluator</a></li>
-                </ul>
-                <br>
+                <p>xxx</p>
+            </div>
+        </div>
+        <div class="content">
+            <div>
+                <p class="title">Epidemic Prediction Platform Integrating Big Data</p>
+                <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
+                <p>xxx</p>
             </div>
         </div>
     </div>
