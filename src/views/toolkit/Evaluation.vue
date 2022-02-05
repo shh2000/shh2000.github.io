@@ -2,17 +2,17 @@
     <div class="container">
         <div class="header">
             <div style="padding-top: 20px;color: white;">
-                <p style="margin: 20px 0 30px 130px; font-size: 60px">Evaluation</p>
+                <p style="margin: 20px 0 30px 130px; font-size: 60px">Chinese Team Achievements</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
-                    LibCity incorporates extensive and standard evaluation metrics for <br> 
-                    testing and comparing intelligence algorithms of spatio-temporal data mining.
+                    We provide an open-sourced EpiModeling toolkit and<br> 
+                    a visualization platform of our weekly prediction and evalution of COVID-19 worldwide.
                 </p>
             </div>
         </div>
 
         <div class="content">
             <div>
-                <p class="title">Evaluation Metrics</p>
+                <p class="title">Open-sourced EpiModeling Toolkit</p>
                 <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
 
                 <p>Considering the different output formats of models for different tasks, the framework implements different evaluators for different tasks and supports a variety of mainstream evaluation methods. The evaluation methods supported by different tasks are given below.</p>

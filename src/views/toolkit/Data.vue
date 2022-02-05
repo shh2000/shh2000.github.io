@@ -2,89 +2,10 @@
   <div class="container">
     <div class="header">
       <div style="padding-top: 20px;color: white;">
-        <p style="margin: 20px 0 30px 130px; font-size: 60px">Data</p>
+        <p style="margin: 20px 0 30px 130px; font-size: 60px">Russian Team Achievements</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          LibCity provides 35 spatio-temporal datasets and introduces unified <br> 
-          data structures to format representations of datas and the input of algorithms.
+          We provide something.
         </p>
-      </div>
-    </div>
-
-    <div class="content">
-      <div>
-        <p class="title">Data Flow</p>
-        <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-        <p>In consideration of extensibiliy, flexibility and reusability, the data module designs an elegant data flow that transforms raw data into the unified input of model module. The overall data flow can be described as follows:</p>
-        <div style="margin: 10px auto 10px auto; text-align: center">
-          <img src="../../assets/img/data_flow.png" alt="Data Flow" height="120"/>
-        </div>
-        
-        <ul>
-          <li><span style="font-weight: 700">Raw Data</span>: Original open source dataset. For each supported original data set, we provide scripts to convert it into <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html" target="_blank">atomic files</a>.</li>
-          <li><span style="font-weight: 700">Atomic Files</span>: Basic input elements for different traffic prediction tasks. You can download <a :href="`${path}A Unified Storage Format of Traffic Data Atomic Files in LibCity.pdf`" download="A Unified Storage Format of Traffic Data Atomic Files in LibCity.pdf">A Unified Storage Format of Traffic Data Atomic Files in LibCity</a> here for details.</li>
-          <li><span style="font-weight: 700">Dataset</span>: Different <code style="color: #e83e8c; font-size: 90%">Dataset</code> classes are developed for each type of traffic prediction task, which are responsible for reading atomic files and performing some data preprocessing operations. See <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/dataset_class.html" target="_blank">here</a> for details.</li>
-          <li><span style="font-weight: 700">DataLoader</span>: The <code style="color: #e83e8c; font-size: 90%">Dataloader</code> class responsible for loading data, using the native <code style="color: #e83e8c; font-size: 90%">torch.utils.data.DataLoader</code> of <code style="color: #e83e8c; font-size: 90%">PyTorch</code>, it is responsible for returning the data to the model in the form of the internal data representation structure <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/batch.html" target="_blank">Batch</a> class.</li>
-        </ul>
-        <br>
-
-        <p class="title">Atomic Files</p>
-        <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-        <p>LibCity introduces and implements 6 atomic file types for formating various spatio-temporal datasets, which are able to characterize most forms of the input data required by different spatio-temporal data mining tasks. These atomic files can be identified by their filenames:</p>
-        <table style="width: 1200px">
-          <thead style="font-size: 16px"><tr>
-            <th width="12%">FILENAME</th>
-            <th width="58%">CONTENT</th>
-            <th width="30%">EXAMPLE FORMAT</th>
-          </tr></thead>
-          <tbody>
-            <tr>
-              <td>xxx.geo</td>
-              <td>Store geographic entity attribute information.</td>
-              <td>geo_id, type, coordinates</td>
-            </tr>
-            <tr>
-              <td>xxx.usr</td>
-              <td>Store traffic user information.</td>
-              <td>usr_id, gender, birth_date</td>
-            </tr>
-            <tr>
-              <td>xxx.rel</td>
-              <td>Store the relationship information between entities, such as road networks.	</td>
-              <td>rel_id, type, origin_id, destination_id</td>
-            </tr>
-            <tr>
-              <td>xxx.dyna</td>
-              <td>Store traffic condition information.</td>
-              <td>dyna_id, type, time, entity_id, location_id</td>
-            </tr>
-            <tr>
-              <td>xxx.ext</td>
-              <td>Store external information, such as weather, temperature, etc.</td>
-              <td>ext_id, time, properties</td>
-            </tr>
-            <tr>
-              <td>config.json</td>
-              <td>Used to supplement the description of the above table information.</td>
-              <td>-</td>
-            </tr>
-          </tbody>
-        </table>
-        <br>
-        <p>The essence of the atomic files is feature-based data frames corresponding to different parts of the task input. And atomic files are combined to support the input of different spatio-temporal data mining tasks. Detailed in <a href="https://bigscity-libcity-docs.readthedocs.io/en/latest/user_guide/data/atomic_files.html" target="_blank">Document</a>.</p>
-        <br>
-
-        <p class="title">Dataset List</p>
-        <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-        <p>We have already collected 35 spatio-temporal datasets. In order to directly use the datasets we collected in LibCity, we have converted all datasets into the format of atomic files, and provide the conversion tools in <a href="https://github.com/LibCity/Bigscity-LibCity-Datasets" target="_blank">this repository</a>. Besides, we have uploaded the processed atomic files in network disks <a href="https://pan.baidu.com/s/1qEfcXBO-QwZfiT0G3IYMpQ#list/path=%2F" target="_blank">BaiduDisk with code 1231</a> or <a href="https://drive.google.com/drive/folders/1g5v2Gq1tkOq8XO0HDCZ9nOTtRpB6-gPe?usp=sharing" target="_blank">Google Drive</a>.</p>
-        <a-divider style="font-size: 24px">Traffic State Dataset</a-divider>
-        <condition-data-table :content="condition"></condition-data-table>
-        <br>
-        <a-divider style="font-size: 24px">Vehicle Trajectory Dataset</a-divider>
-        <vehicle-data-table :content="vehicle"></vehicle-data-table>
-        <br>
-        <a-divider style="font-size: 24px">POI Check-in Dataset</a-divider>
-        <people-data-table :content="people"></people-data-table>
-        <br>
       </div>
     </div>
   </div>

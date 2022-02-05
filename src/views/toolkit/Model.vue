@@ -2,77 +2,10 @@
     <div class="container">
         <div class="header">
             <div style="padding-top: 20px;color: white;">
-                <p style="margin: 20px 0 30px 130px; font-size: 60px">Model</p>
+                <p style="margin: 20px 0 30px 130px; font-size: 60px">Brazilian Team Achievements</p>
                 <p style="margin: 0px 0 20px 130px; font-size: 30px">
-                    LibCity supports 9 mainstream spatio-temporal data mining tasks <br> 
-                    and implements 60 commonly used intelligence algorithms.
+                    We provide something.
                 </p>
-            </div>
-        </div>
-
-        <div class="content">
-            <div>
-                <p class="title">Model List</p>
-                <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-                <p>Up to now, LibCity supports 9 mainstream spatio-temporal data mining tasks:</p>
-                <ul>
-                    <li>Traffic Flow Prediction</li>
-                    <li>Traffic Speed Prediction</li>
-                    <li>On-Demand Service Prediction</li>
-                    <li>Origin-Destination Matrix Prediction</li>
-                    <li>Traffic Accidents Prediction</li>
-                    <li>Trajectory Next-Location Prediction</li>
-                    <li>Estimated Time of Arrival</li>
-                    <li>Map Matching</li>
-                    <li>Road Network Representation Learning</li>
-                </ul>
-                <p>Besides, LibCity has already implemented 60 commonly used intelligence algorithms. We summary the models in the following tables: </p>
-
-                <a-divider style="font-size: 24px">Traffic Flow Prediction</a-divider>
-                <model-table :content="flow"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Traffic Speed Prediction</a-divider>
-                <model-table :content="speed"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">On-Demand Service Prediction</a-divider>
-                <model-table :content="demand"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Origin-Destination Matrix Prediction</a-divider>
-                <model-table :content="od"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Traffic Accidents Prediction</a-divider>
-                <model-table :content="accident"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Trajectory Next-Location Prediction</a-divider>
-                <model-table :content="location"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Estimated Time of Arrival</a-divider>
-                <model-table :content="eta"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Map Matching</a-divider>
-                <model-table :content="mm"></model-table>
-                <br>
-
-                <a-divider style="font-size: 24px">Road Network Representation Learning</a-divider>
-                <model-table :content="representation"></model-table>
-                <br>
-
-                <p class="title">Baselines</p>
-                <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), #f6f6f6, #f6f6f6);"></a-divider>
-                <p>We have also implemented several baselines for different task:</p>
-                <ul>
-                    <li>For time series prediction: HA, VAR, SVR, ARIMA</li>
-                    <li>For traffic flow/speed/demand prediction: AutoEncoder, RNN(FC-RNN), Seq2Seq, FNN</li>
-                    <li>For trajectory next-location prediction: RNN</li>
-                </ul>
-                <br>
             </div>
         </div>
     </div>

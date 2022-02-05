@@ -4,20 +4,81 @@
       <div style="padding-top: 20px;color: white;">
         <p style="margin: 20px 0 30px 130px; font-size: 60px">Paper</p>
         <p style="margin: 0px 0 20px 130px; font-size: 30px">
-          This page provides the related papers of LibCity.
+          This page provides the papers that our team published.
         </p>
       </div>
     </div>
-    <div class="content">
-        <div>
-            <p>
-                <a-button type="link" class="title" @click="toPaperDetail('LibCity-An-Open-Library-For-Traffic-Prediction')">LibCity: An Open Library for Traffic Prediction</a-button>
-            </p>
-            <p>Jingyuan Wang, Jiawei Jiang, Wenjun Jiang, Chao Li, Wayne Xin Zhao<br>
-            <b><i>In Proceedings of the 29th International Conference on Advances in Geographic Information Systems (SIGSPATIAL'21)</i></b>.</p>
-            <p><b>Abstract</b>: With the increase of traffic prediction models, there has become an urgent need to develop a standardized framework to implement and evaluate these methods. This paper presents LibCity, a unified, comprehensive, and extensible library for traffic prediction, which provides researchers with a credible experimental tool and a convenient development framework. In this library, we reproduce 42 traffic prediction models and collect 29 spatial-temporal datasets, which allows researchers to conduct comprehensive experiments in a convenient way. To accelerate the development of new models, we design unified model interfaces based on unified data formats, which effectively encapsulate the details of the implementation. To verify the effectiveness of our implementations, we also report the reproducibility comparison results of LibCity, and set up a performance leaderboard for the four kinds of traffic prediction tasks. Our library will contribute to the standardization and reproducibility in the field of traffic prediction. The open source link of LibCity is https://github.com/LibCity/Bigscity-LibCity.</p>
-            <a-divider style="margin: 10px 0; background-image: linear-gradient(to right,  rgb(103, 179, 241),  rgb(103, 179, 241), rgb(103, 179, 241), rgb(103, 179, 241));"></a-divider>
-            <br>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/1.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong><a href="https://dl.acm.org/doi/abs/10.1145/3447548.3467069">RAPT: Pre-training of time-aware transformer for learning robust healthcare representation</a></strong><br>
+            <span id="author">H. Ren, <b>J. Wang</b>, W. X. Zhao, and N. Wu</span><br>
+            <span id="conference">ACMKDD 2021[<a :href="`${path}1.pdf`">PDF</a>]</span><br>
+            <span id="author">Ren H, Wang J, Zhao W X, et al. RAPT: Pre-training of Time-Aware Transformer for Learning Robust Healthcare Representation[C]//Proceedings of the 27th ACM SIGKDD Conference on Knowledge Discovery and Data Mining. 2021: 3503-3511.</span>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/2.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong><a href="https://www.tandfonline.com/doi/full/10.1080/0960085X.2020.1863751">Designing for the future in the age of pandemics: a future-ready design research (FRDR) process</a></strong><br>
+            <span id="author">L. Pee, S. L. Pan, <b>J. Wang</b>, and J. Wu</span><br>
+            <span id="conference">EJIS vol.30[<a :href="`${path}2.pdf`">PDF</a>]</span><br>
+            <span id="author">Pee L G, Pan S L, Wang J, et al. Designing for the future in the age of pandemics: A future-ready design research (FRDR) process[J]. European Journal of Information Systems, 2021, 30(2): 157-175.</span>
+
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/3.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong><a href="https://bmjopen.bmj.com/content/11/2/e043863.abstract">Impact of temperature and relative humidity on the transmission of COVID-19: a modelling study in China and the United States</a></strong><br>
+            <span id="author"><b>J. Wang</b>, K. Tang, K. Feng, X. Lin, W. Lv, K. Chen, and F. Wan</span><br>
+            <span id="conference">BMJ Open vol.11[<a :href="`${path}3.pdf`">PDF</a>]</span><br>
+            <span id="author">Wang J, Tang K, Feng K, et al. Impact of temperature and relative humidity on the transmission of COVID-19: a modelling study in China and the United States[J]. BMJ open, 2021, 11(2): e043863.</span>
+
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/4.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong><a href="https://idpjournal.biomedcentral.com/articles/10.1186/s40249-021-00843-2">Coronavirus disease 2019 outbreak in Beijing’s Xinfadi Market, China: a modeling study to inform future resurgence response</a></strong><br>
+            <span id="author">X.-L. Wang, X. Lin,...,<b>J. Wang</b>,...</span><br>
+            <span id="conference">IDP vol.10[<a :href="`${path}4.pdf`">PDF</a>]</span><br>
+            <span id="author">Wang X L, Lin X, Yang P, et al. Coronavirus disease 2019 outbreak in Beijing’s Xinfadi Market, China: a modeling study to inform future resurgence response[J]. Infectious diseases of poverty, 2021, 10(1): 1-10.</span>
+
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/5.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong><a href="https://bmjopen.bmj.com/content/11/9/e047227.abstract">Transmission dynamics and the effects of non-pharmaceutical interventions in the COVID-19 outbreak resurged in Beijing, China: a descriptive and modelling study</a></strong><br>
+            <span id="author">X. Cui, L. Zhao,...,<b>J. Wang</b>,...</span><br>
+            <span id="conference">BMJ Open vol.11[<a :href="`${path}5.pdf`">PDF</a>]</span><br>
+            <span id="author">Cui X, Zhao L, Zhou Y, et al. Transmission dynamics and the effects of non-pharmaceutical interventions in the COVID-19 outbreak resurged in Beijing, China: a descriptive and modelling study[J]. BMJ open, 2021, 11(9): e047227.</span>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/6.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong><a href="https://arxiv.org/abs/2004.12433">A knowledge transfer model for COVID-19 predicting and non-pharmaceutical intervention simulation</a></strong><br>
+            <span id="author"><b>J. Wang</b>, X. Lin, Y. Liu, Qilegeri, K. Feng and H. Lin</span><br>
+            <span id="conference">[<a :href="`${path}6.pdf`">PDF</a>]</span><br>
+            <span id="author">Wang J, Lin X, Liu Y, et al. A knowledge transfer model for COVID-19 predicting and non-pharmaceutical intervention simulation[J]. arXiv preprint arXiv:2004.12433, 2020.</span>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/7.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong>An AI-assisted Economic Model of Endogenous Mobility and Infectious Diseases: The Case of COVID-19 in the United States</strong><br>
+            <span id="author">LW. Cong, K. Tang, B. Wang, <b>J. Wang</b></span><br>
+            <span id="conference">Available at SSRN 3901449, 2021[<a :href="`${path}7.pdf`">PDF</a>]</span><br>
+        </div>
+    </div>
+    <div class="row pt-3">
+        <img class="col-md-2" src="../assets/img/8.png" style="height:100px;">
+        <div class="col-md-10">
+            <strong>When is the covid-19 pandemic over? Evidence from the stay-at-home policy execution in 106 Chinese cities</strong><br>
+            <span id="author"><b>J. Wang</b>, K. Tang, K. Feng, and W. Lv</span><br>
+            <span id="conference">Available at SSRN 3561491, 2020[<a :href="`${path}8.pdf`">PDF</a>]</span><br>
         </div>
     </div>
   </div>
@@ -27,21 +88,46 @@
     export default {
         data() {
             return {
+                path:process.env.BASE_URL,
             };
         },
         components: {
-        },
-        methods: {
-            toPaperDetail(paper) {
-                this.$router.push({
-                    name: paper,
-                });
-            },
         }
     };
 </script>
 
 <style scoped>
+.col-md-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 10%;
+    flex: 0 0 10%;
+    max-width: 10%;
+}
+.col-md-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 90%;
+    flex: 0 0 90%;
+    max-width: 90%;
+}
+#author {
+    color: #999;
+}
+#conference {
+    font-family: 'Arial';
+    color: #777;
+}
+.pt-3, .py-3 {
+    padding-top: 1rem!important;
+}
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: 120px;
+    margin-left: 120px;
+}
 .container {
   margin: auto;
   width: 100%;
